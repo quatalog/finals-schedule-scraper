@@ -24,7 +24,7 @@ jobs:
             LINK2="$(echo "$LINK1" | sed 's/\/s\//\/public\/static\//')"
             TITLE="$(curl -Ls $LINK1 | grep -oie 'meta property="og:title" content="[^|]*' | cut -d\" -f4)"
             TITLE="${TITLE%?}"
-            curl -o "$TITLE" "$LINK2"
+            curl -Lo "$TITLE" "$LINK2"
             echo "Downloaded $TITLE ($LINK1)"
           done
             
