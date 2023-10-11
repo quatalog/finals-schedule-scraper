@@ -1,8 +1,8 @@
-name: Save finals schedule PDF
+name: Save finals schedule PDFs
 
 on:
-  #schedule:
-  #- cron: '0 * * * *'
+  schedule:
+  - cron: '0 * * * *'
   workflow_dispatch:
 
 jobs:
@@ -15,23 +15,22 @@ jobs:
     steps:
       - name: Clone repo
         uses: actions/checkout@v3
-        
-      #- name: Setup pdftotext
-      #  run: sudo apt-get install poppler-utils
-      #
-      #- name: Set up Python
-      #  uses: actions/setup-python@v2
-      #  with:
-      #    python-version: '3.10'
 
-      - name: Get data
+      - name: Get files
         run: |
-          curl -o registrar_grades.html 'https://info.rpi.edu/registrar/grades'
-          grep -oie '[^"]*box\.com[^"]*' registrar_grades.html 
+          curl -Lso registrar_grades.html 'https://info.rpi.edu/registrar/grades'
+          grep -ie '[^"]*box\.com[^"]*' registrar_grades.html | while read -r link; do
+            LINK1="$(echo "$link" | grep -oie '[^"]*box\.com[^"]*')"
+            LINK2="$(echo "$LINK1" | sed 's/\/s\//\/public\/static\//')"
+            TITLE="$(curl -Ls $LINK1 | grep -oie 'meta property="og:title" content="[^|]*' | cut -d\" -f4)"
+            TITLE="${TITLE%?}"
+            curl -o "$TITLE" "$LINK2"
+            echo "Downloaded $TITLE ($LINK1)"
+          done
             
-      - name: Commit data
+      - name: Commit files
         run: |
           git config user.name "Quatalog Updater" && git config user.email "github_actions@quatalog.com"
           git add *.pdf registrar_grades.html
-          git commit --allow-empty -m "$(date -u)"
+          git commit -m "$(date -u)" || exit 0
           git push
