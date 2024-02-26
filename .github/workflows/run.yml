@@ -1,8 +1,8 @@
 name: Save finals schedule PDFs
 
 on:
-  #schedule:
-  #- cron: '0 * * * *'
+  schedule:
+  - cron: '0 * * * *'
   workflow_dispatch:
 
 jobs:
@@ -24,8 +24,7 @@ jobs:
             LINK2="$(echo "$LINK1" | sed 's/\/s\//\/public\/static\//')"
             TITLE="$(curl -Ls $LINK1 | grep -oie 'meta property="og:title" content="[^|]*' | cut -d\" -f4)"
             TITLE="${TITLE%?}"
-            curl -Lo "$TITLE" "$LINK2"
-            echo "Downloaded $TITLE ($LINK1)"
+            curl -Lo "$TITLE" "$LINK2" && echo "Downloaded $TITLE ($LINK1)" || echo "Failed to download $TITLE ($LINK1)" || true
           done
             
       - name: Commit files
