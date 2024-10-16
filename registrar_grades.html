@@ -1,1226 +1,444 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML+RDFa 1.1//EN">
-<html lang="en" dir="ltr" version="HTML+RDFa 1.1"
-  xmlns:content="http://purl.org/rss/1.0/modules/content/"
-  xmlns:dc="http://purl.org/dc/terms/"
-  xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  xmlns:og="http://ogp.me/ns#"
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xmlns:sioc="http://rdfs.org/sioc/ns#"
-  xmlns:sioct="http://rdfs.org/sioc/types#"
-  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
-<head profile="http://www.w3.org/1999/xhtml/vocab">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
-<link rel="canonical" href="/registrar/grades" />
-<link rel="shortlink" href="/node/46304" />
-<link rel="shortcut icon" href="https://info.rpi.edu/sites/default/files/icon-red_2.png" type="image/png" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
-  <title>Grades | RPI INFO</title>  
-  <style type="text/css" media="all">
-@import url("https://info.rpi.edu/modules/system/system.base.css?slfgqp");
-@import url("https://info.rpi.edu/modules/system/system.menus.css?slfgqp");
-@import url("https://info.rpi.edu/modules/system/system.messages.css?slfgqp");
-@import url("https://info.rpi.edu/modules/system/system.theme.css?slfgqp");
-</style>
-<style type="text/css" media="all">
-@import url("https://info.rpi.edu/modules/comment/comment.css?slfgqp");
-@import url("https://info.rpi.edu/modules/field/theme/field.css?slfgqp");
-@import url("https://info.rpi.edu/modules/node/node.css?slfgqp");
-@import url("https://info.rpi.edu/modules/search/search.css?slfgqp");
-@import url("https://info.rpi.edu/modules/user/user.css?slfgqp");
-@import url("https://info.rpi.edu/sites/all/modules/views/css/views.css?slfgqp");
-@import url("https://info.rpi.edu/sites/all/modules/ckeditor/css/ckeditor.css?slfgqp");
-</style>
-<style type="text/css" media="all">
-@import url("https://info.rpi.edu/sites/all/modules/ctools/css/ctools.css?slfgqp");
-@import url("https://info.rpi.edu/sites/all/modules/field_collection/field_collection.theme.css?slfgqp");
-@import url("https://info.rpi.edu/sites/all/themes/rpi2016/resources/web-branding/v1/css/rpi.css?slfgqp");
-@import url("https://info.rpi.edu/sites/all/themes/rpi2016/resources/fontawesome/css/fontawesome.css?slfgqp");
-</style>
-<style type="text/css" media="all">
-@import url("https://info.rpi.edu/sites/all/themes/omega/alpha/css/alpha-reset.css?slfgqp");
-@import url("https://info.rpi.edu/sites/all/themes/omega/alpha/css/alpha-mobile.css?slfgqp");
-@import url("https://info.rpi.edu/sites/all/themes/omega/alpha/css/alpha-alpha.css?slfgqp");
-@import url("https://info.rpi.edu/sites/all/themes/omega/omega/css/formalize.css?slfgqp");
-@import url("https://info.rpi.edu/sites/all/themes/omega/omega/css/omega-text.css?slfgqp");
-@import url("https://info.rpi.edu/sites/all/themes/omega/omega/css/omega-branding.css?slfgqp");
-@import url("https://info.rpi.edu/sites/all/themes/omega/omega/css/omega-menu.css?slfgqp");
-@import url("https://info.rpi.edu/sites/all/themes/omega/omega/css/omega-forms.css?slfgqp");
-@import url("https://info.rpi.edu/sites/all/themes/omega/omega/css/omega-visuals.css?slfgqp");
-@import url("https://info.rpi.edu/sites/all/themes/rpi2016/css/global.css?slfgqp");
-</style>
 
-<!--[if (lt IE 9)&(!IEMobile)]>
-<style type="text/css" media="all">
-@import url("https://info.rpi.edu/sites/all/themes/rpi2016/css/rpi2016-alpha-default.css?slfgqp");
-@import url("https://info.rpi.edu/sites/all/themes/rpi2016/css/rpi2016-alpha-default-normal.css?slfgqp");
-@import url("https://info.rpi.edu/sites/all/themes/omega/alpha/css/grid/alpha_default/normal/alpha-default-normal-12.css?slfgqp");
-</style>
-<![endif]-->
 
-<!--[if gte IE 9]><!-->
-<style type="text/css" media="all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)">
-@import url("https://info.rpi.edu/sites/all/themes/rpi2016/css/rpi2016-alpha-default.css?slfgqp");
-@import url("https://info.rpi.edu/sites/all/themes/rpi2016/css/rpi2016-alpha-default-narrow.css?slfgqp");
-@import url("https://info.rpi.edu/sites/all/themes/omega/alpha/css/grid/alpha_default/narrow/alpha-default-narrow-12.css?slfgqp");
-</style>
-<!--<![endif]-->
+<!DOCTYPE html>
+<html  lang="en" dir="ltr">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="utf-8" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=GT-PZMD9K"></script>
+<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag("js", new Date());gtag("set", "developer_id.dMDhkMT", true);gtag("config", "GT-PZMD9K", {"groups":"default","page_placeholder":"PLACEHOLDER_page_location"});</script>
+<link rel="canonical" href="https://registrar.rpi.edu/classes-grades-and-evaluations" />
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
 
-<!--[if gte IE 9]><!-->
-<style type="text/css" media="all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)">
-@import url("https://info.rpi.edu/sites/all/themes/rpi2016/css/rpi2016-alpha-default.css?slfgqp");
-@import url("https://info.rpi.edu/sites/all/themes/rpi2016/css/rpi2016-alpha-default-normal.css?slfgqp");
-@import url("https://info.rpi.edu/sites/all/themes/omega/alpha/css/grid/alpha_default/normal/alpha-default-normal-12.css?slfgqp");
-</style>
-<!--<![endif]-->
 
-<!--[if gte IE 9]><!-->
-<style type="text/css" media="all and (min-width: 1220px)">
-@import url("https://info.rpi.edu/sites/all/themes/rpi2016/css/rpi2016-alpha-default.css?slfgqp");
-@import url("https://info.rpi.edu/sites/all/themes/rpi2016/css/rpi2016-alpha-default-wide.css?slfgqp");
-@import url("https://info.rpi.edu/sites/all/themes/omega/alpha/css/grid/alpha_default/wide/alpha-default-wide-12.css?slfgqp");
-</style>
-<!--<![endif]-->
-  <script type="text/javascript" src="https://info.rpi.edu/sites/all/modules/jquery_update/replace/jquery/1.12/jquery.min.js?v=1.12.4"></script>
-<script type="text/javascript" src="https://info.rpi.edu/misc/jquery-extend-3.4.0.js?v=1.12.4"></script>
-<script type="text/javascript" src="https://info.rpi.edu/misc/jquery-html-prefilter-3.5.0-backport.js?v=1.12.4"></script>
-<script type="text/javascript" src="https://info.rpi.edu/misc/jquery.once.js?v=1.2"></script>
-<script type="text/javascript" src="https://info.rpi.edu/misc/drupal.js?slfgqp"></script>
-<script type="text/javascript" src="https://info.rpi.edu/sites/all/modules/jquery_update/js/jquery_browser.js?v=0.0.1"></script>
-<script type="text/javascript" src="https://info.rpi.edu/sites/all/modules/admin_menu/admin_devel/admin_devel.js?slfgqp"></script>
-<script type="text/javascript" src="https://info.rpi.edu/sites/all/themes/rpi2016/resources/frontpage.js?slfgqp"></script>
-<script type="text/javascript" src="https://info.rpi.edu/sites/all/themes/rpi2016/resources/anchors.js?slfgqp"></script>
-<script type="text/javascript" src="https://info.rpi.edu/sites/all/themes/rpi2016/resources/accordions.js?slfgqp"></script>
-<script type="text/javascript" src="https://info.rpi.edu/sites/all/themes/rpi2016/js/browser.js?slfgqp"></script>
-<script type="text/javascript" src="https://info.rpi.edu/sites/all/themes/omega/omega/js/jquery.formalize.js?slfgqp"></script>
-<script type="text/javascript" src="https://info.rpi.edu/sites/all/themes/omega/omega/js/omega-mediaqueries.js?slfgqp"></script>
-<script type="text/javascript">
-<!--//--><![CDATA[//><!--
-jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"rpi2016","theme_token":"I9-K9hjqAK6BM1RESQ_CPfM57XNI7U4K0H-NAUEvFJU","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.12\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/jquery_update\/js\/jquery_browser.js":1,"sites\/all\/modules\/admin_menu\/admin_devel\/admin_devel.js":1,"sites\/all\/themes\/rpi2016\/resources\/frontpage.js":1,"sites\/all\/themes\/rpi2016\/resources\/anchors.js":1,"sites\/all\/themes\/rpi2016\/resources\/accordions.js":1,"sites\/all\/themes\/rpi2016\/js\/browser.js":1,"sites\/all\/themes\/omega\/omega\/js\/jquery.formalize.js":1,"sites\/all\/themes\/omega\/omega\/js\/omega-mediaqueries.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/field_collection\/field_collection.theme.css":1,"sites\/all\/themes\/rpi2016\/resources\/web-branding\/v1\/css\/rpi.css":1,"sites\/all\/themes\/rpi2016\/resources\/fontawesome\/css\/fontawesome.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-reset.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-mobile.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-alpha.css":1,"sites\/all\/themes\/omega\/omega\/css\/formalize.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-text.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-branding.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-menu.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-forms.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-visuals.css":1,"sites\/all\/themes\/rpi2016\/css\/global.css":1,"ie::normal::sites\/all\/themes\/rpi2016\/css\/rpi2016-alpha-default.css":1,"ie::normal::sites\/all\/themes\/rpi2016\/css\/rpi2016-alpha-default-normal.css":1,"ie::normal::sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-12.css":1,"narrow::sites\/all\/themes\/rpi2016\/css\/rpi2016-alpha-default.css":1,"narrow::sites\/all\/themes\/rpi2016\/css\/rpi2016-alpha-default-narrow.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/narrow\/alpha-default-narrow-12.css":1,"normal::sites\/all\/themes\/rpi2016\/css\/rpi2016-alpha-default.css":1,"normal::sites\/all\/themes\/rpi2016\/css\/rpi2016-alpha-default-normal.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-12.css":1,"wide::sites\/all\/themes\/rpi2016\/css\/rpi2016-alpha-default.css":1,"wide::sites\/all\/themes\/rpi2016\/css\/rpi2016-alpha-default-wide.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/wide\/alpha-default-wide-12.css":1}},"omega":{"layouts":{"primary":"normal","order":["narrow","normal","wide"],"queries":{"narrow":"all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)","normal":"all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)","wide":"all and (min-width: 1220px)"}}}});
-//--><!]]>
+      <link rel="apple-touch-icon" sizes="180x180" href="/themes/custom/paperclip/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/themes/custom/paperclip/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/themes/custom/paperclip/img/favicons/favicon-16x16.png">
+<link rel="manifest" href="/themes/custom/paperclip/img/favicons/site.webmanifest">
+<link rel="mask-icon" href="/themes/custom/paperclip/img/favicons/safari-pinned-tab.svg" color="#d6001c">
+<meta name="msapplication-TileColor" content="#d6001c">
+<meta name="theme-color" content="#ffffff">      <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "CollegeOrUniversity",
+  "name": "Rensselaer Polytechnic Institute",
+  "department": {
+      "@type": "Organization",
+      "name": "Office of the Registrar"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "US",
+    "addressLocality": "Troy",
+    "addressRegion": "New York",
+    "postalCode": "12180",
+    "streetAddress": "110 Eighth Street"
+  },
+  "telephone": "(518) 276-6000",
+  "faxNumber": "(518) 276-6505",
+  "email": "admissions@rpi.edu",
+  "url": "https://registrar.rpi.edu/",
+  "logo": "https://rpi.widen.net/content/4btuyh1med/jpeg/RPI%20Logo%20Sm%20CMYK-Red.jpeg",
+  "photo": "https://rpi.widen.net/content/enazlhobuz/jpeg/panoramic-campus-footer.jpeg",
+  "image": "https://rpi.widen.net/content/enazlhobuz/jpeg/panoramic-campus-footer.jpeg",
+  "hasMap": "https://rpi.app.box.com/v/RPICampusMap",
+  "diversityPolicy": "https://info.rpi.edu/diversity",
+  "foundingDate": "1824",
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "credentialCategory": "Accreditation",
+    "recognizedBy": [
+      {
+        "@type": "Organization",
+        "name": "Middle States Commission on Higher Education"
+      },
+      {
+        "@type": "Organization",
+        "name": "ABET"
+      },
+      {
+        "@type": "Organization",
+        "name": "The Association to Advance Collegiate Schools of Business"
+      },
+      {
+        "@type": "Organization",
+        "name": "The National Architectural Accrediting Board"
+      },
+      {
+        "@type": "Organization",
+        "name": "American Chemical Society"
+      }
+    ]
+  }
+}
 </script>
-  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-</head>
-<body class="html not-front not-logged-in page-node page-node- page-node-46304 node-type-page context-registrar">
+    <title>Classes, Grades, and Evaluations | Office of the Registrar</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_nq60oXhp2z9FCvmidojO0dbzBIhRNzb1uyTGId_tnpc.css?delta=0&amp;language=en&amp;theme=paperclip&amp;include=eJx1jksOwzAIRC_k2EeKIKaOJWIQ4EVun6zSSm2X89G88dODjoLglFAkPAx0RTDrUhoLAi8eJ_fRkoKSbdz1f_CSEX5rg3bv7F6qTQXObyfPoRO5-071mzik_viBRlA3mwd-oJ7WBYQfTU8" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_cj97rXfp-nSTvfqArqz9rbKFwpsw1PjaovL4v63a8PM.css?delta=1&amp;language=en&amp;theme=paperclip&amp;include=eJx1jksOwzAIRC_k2EeKIKaOJWIQ4EVun6zSSm2X89G88dODjoLglFAkPAx0RTDrUhoLAi8eJ_fRkoKSbdz1f_CSEX5rg3bv7F6qTQXObyfPoRO5-071mzik_viBRlA3mwd-oJ7WBYQfTU8" />
+<link rel="stylesheet" media="print" href="/sites/default/files/css/css_Amh4NbPCiij1cz3vvkijnspb3wcC13WYCo0niZr0oGI.css?delta=2&amp;language=en&amp;theme=paperclip&amp;include=eJx1jksOwzAIRC_k2EeKIKaOJWIQ4EVun6zSSm2X89G88dODjoLglFAkPAx0RTDrUhoLAi8eJ_fRkoKSbdz1f_CSEX5rg3bv7F6qTQXObyfPoRO5-071mzik_viBRlA3mwd-oJ7WBYQfTU8" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_w-ecxR6Ei5vAqrlzDDFFzhxYGhwXuQRUCxw86aKgYYw.css?delta=3&amp;language=en&amp;theme=paperclip&amp;include=eJx1jksOwzAIRC_k2EeKIKaOJWIQ4EVun6zSSm2X89G88dODjoLglFAkPAx0RTDrUhoLAi8eJ_fRkoKSbdz1f_CSEX5rg3bv7F6qTQXObyfPoRO5-071mzik_viBRlA3mwd-oJ7WBYQfTU8" />
+<link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&amp;family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&amp;display=swap" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_Mt09BknVfxgzQ3RamnRkveK9KA-KUI0fNWwruxInEJA.css?delta=5&amp;language=en&amp;theme=paperclip&amp;include=eJx1jksOwzAIRC_k2EeKIKaOJWIQ4EVun6zSSm2X89G88dODjoLglFAkPAx0RTDrUhoLAi8eJ_fRkoKSbdz1f_CSEX5rg3bv7F6qTQXObyfPoRO5-071mzik_viBRlA3mwd-oJ7WBYQfTU8" />
 
-  <div id="skip-link">
-    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
-  </div>
-    <div class="page clearfix" id="page">
-      <header id="section-header" class="section section-header">
-  <div id="zone-branding-wrapper" class="zone-wrapper zone-branding-wrapper clearfix">  
-  <div id="zone-branding" class="zone zone-branding clearfix container-12">
-    <div class="grid-12 region region-branding" id="region-branding">
-  <div class="region-inner region-branding-inner">
-        <div class="block block-block block-51 block-block-51 odd block-without-title" id="block-block-51">
-  <div class="block-inner clearfix">
-                
-    <div class="content clearfix">
-        <!-- Google Tag Manager from 3E -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-TTZ4NGZ');</script>
-  <!-- End Google Tag Manager -->
-
-  <!-- Google Analytics from Web Services -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5V1Z271ZP6"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-5V1Z271ZP6');
-  </script>
-  <!-- End Google Analytics -->    </div>
-  </div>
-</div><div class="block block-block container-12 block-11 block-block-11 even block-without-title" id="block-block-11">
-  <div class="block-inner clearfix">
-                
-    <div class="content clearfix">
-      <div id="rpi-min-header">
-        <div id="rpi-ribbon"></div>	
-	<div id="rensselaerLogo">
-              <a href="http://www.rpi.edu/"><img src="https://info.rpi.edu/sites/all/themes/rpi2016/resources/200Main_White_sm.png" alt="Rensselaer Polytechnic Institute"/></a>
-        </div>
-
-        <nav role="navigation">
-          <a href="http://admissions.rpi.edu/">Apply</a>
-          <a href="https://info.rpi.edu/visit">Visit</a>
-          <a href="http://giving.rpi.edu/">Give </a>
-          <a href="https://info.rpi.edu/rpi-search" target="_blank">Search</a><!--
-           <form id="rpi-site-search" name="searchForm" action="javascript:submitRpiSearch()" method="post" role="search">
-             <label for="rpi-site-search-query" class="hidden">Search the site</label>
-             <input type="text" placeholder="search rpi" value="" size="12" id="rpi-site-search-query" name="queryHolder" maxlength="255" alt="search term" title="Search">
-             <input type="submit" value="search" class="hidden" title="Submit">
-             <a id="search-button"><i class="fa fa-search"></i></a>
-         </form>
--->
-
-        </nav>
-	
-<!---------------- RPI SEARCH FUNCTION ---------------->
-
-<script>
-/*
-  function submitRpiSearch() {
-  var formObj = document.getElementById("rpi-site-search");
-  var searchStr = jQuery.trim(formObj.queryHolder.value);
-
-      document.googleForm.s.value = searchStr;
-      document.googleForm.submit();
     
-  } 
- */
+  </head>
+  <body class="layout-one-sidebar layout-sidebar-first page-node-570 path-node page-node-type-advanced-page">
+    <a href="#main-content" class="visually-hidden-focusable skip-link">
+      Skip to main content
+    </a>
 
-</script>
-	
 
-<!---------------- HIDDEN SEARCH FORMS ---------------->
 
-<div id="hiddenForms" class="invisible">
-  <form name="googleForm" method="get" action="https://info.rpi.edu/">
-    <input type="hidden" value="" name="s">
-    <input type="hidden" value="search" name="q">
-  </form>
-</div>      
-
-</div>
-    </div>
-  </div>
-</div>  </div>
-</div>  </div>
-</div><div id="zone-menu-wrapper" class="zone-wrapper zone-menu-wrapper clearfix">  
-  <div id="zone-menu" class="zone zone-menu clearfix container-12">
-    <div class="grid-12 region region-menu" id="region-menu">
-  <div class="region-inner region-menu-inner">
-          </div>
-</div>
-  </div>
-</div><div id="zone-header-wrapper" class="zone-wrapper zone-header-wrapper clearfix">  
-  <div id="zone-header" class="zone zone-header clearfix container-12">
-    <div class="grid-12 region region-header-first" id="region-header-first">
-  <div class="region-inner region-header-first-inner">
-    <div class="block block-views block-microsite-banner-block block-views-microsite-banner-block odd block-without-title" id="block-views-microsite-banner-block">
-  <div class="block-inner clearfix">
-                
-    <div class="content clearfix">
-      <div class="view view-microsite-banner view-id-microsite_banner view-display-id-block view-dom-id-9439fdab6efb725ad86607413166d8cf">
-        
-  
-  
-      <div class="view-content">
-        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
-      
-  <div class="views-field views-field-title">        <span class="field-content"><div class="microsite-title-area">
-<div class="container-12"><h1 class="microsite-title"><a href="/registrar">Office of the Registrar</a></h1></div>
-</div></span>  </div>  
-  <div class="views-field views-field-field-banner-image">        <div class="field-content"><div class="img-overflow"><img typeof="foaf:Image" src="https://info.rpi.edu/sites/default/files/Banner%20Registrar.png" width="1500" height="500" alt="" /></div>
-</div>  </div>  </div>
-    </div>
-  
-  
-  
-  
-  
-  
-</div>    </div>
-  </div>
-</div><div class="block block-block announcement-bar block-42 block-block-42 even block-without-title" id="block-block-42">
-  <div class="block-inner clearfix">
-                
-    <div class="content clearfix">
-      <div>You are <strong>welcome</strong> here. You <strong>belong<strong> </strong></strong>here. We <strong>support<strong> </strong></strong>you here<strong><strong><strong><strong>.</strong></strong></strong></strong></div>
-    </div>
-  </div>
-</div>  </div>
-</div>  </div>
-</div></header>    
-      <section id="section-content" class="section section-content">
-  <div id="zone-content-wrapper" class="zone-wrapper zone-content-wrapper clearfix">  
-  <div id="zone-content" class="zone zone-content clearfix container-12">    
-        
-        <aside class="grid-3 region region-sidebar-first" id="region-sidebar-first">
-  <div class="region-inner region-sidebar-first-inner">
-    <div class="block block-block block-22 block-block-22 odd block-without-title" id="block-block-22">
-  <div class="block-inner clearfix">
-                
-    <div class="content clearfix">
-      <a href="http://catalog.rpi.edu/"><button class="btn more-link" style="margin-bottom: 15px">Academic Catalog</button></a>
-</br>
-<a href="https://info.rpi.edu/registrar/academic-calendar/"><button class="btn more-link" style="margin-bottom: 15px">Academic Calendar</button></a>
-<br />
-<a href="https://rpi-registrar.zendesk.com/hc/en-us/requests/new"><button class="btn more-link" style="margin-bottom: 15px">Registrar Request</button></a>    </div>
-  </div>
-</div><div class="block block-block block-6 block-block-6 even block-without-title" id="block-block-6">
-  <div class="block-inner clearfix">
-                
-    <div class="content clearfix">
-      <div id="mobileMenuContainer">
-<a name="mobileMenu" class="mobileMenu" href="#mobileMenu"> ☰ Menu</a>
-</div>
-<script>
-(function ($) {
-$(document).ready(function(){
-$('#region-sidebar-first .micrositemenu').addClass('mobilerollup');
- $( ".mobileMenu" ).on('click',function() {
-     $('#region-sidebar-first .micrositemenu').toggleClass('mobilerollup');
-  });
-  });
-})(jQuery);
-</script>    </div>
-  </div>
-</div><div class="block block-views micrositemenu block-t-block block-views-t-block odd block-without-title" id="block-views-t-block">
-  <div class="block-inner clearfix">
-                
-    <div class="content clearfix">
-      <div class="view view-t view-id-t view-display-id-block view-dom-id-82caaaad22aee3a4f6b5de896050efb0">
-        
-  
-  
-      <div class="view-content">
-        <h3><a href="/registrar/ferpa-policy">FERPA Policy</a></h3>
-  <div class="views-row views-row-1 views-row-odd views-row-first">
-      
-  <div>        <div>
-<a href="/registrar/ferpa-policy/#StatementofPolicyandProceduresinCompliancewiththeFamilyEducationalRightsandPrivacyAct">  
-     
-     	
-     Statement of Policy and Procedures in Compliance with the Family Educational Rights and Privacy Act     
-  
-</a></div>  </div>  </div>
-  <div class="views-row views-row-2 views-row-even views-row-last">
-      
-  <div>        <div>
-<a href="/registrar/ferpa-policy/#ParentalNotification">  
-     
-     	
-     Parental Notification     
-  
-</a></div>  </div>  </div>
-  <h3><a href="/registrar/academic-planning" class="active">Academic Planning</a></h3>
-  <div class="views-row views-row-1 views-row-odd views-row-first">
-      
-  <div>        <div>
-<a href="/registrar/academic-planning/#AcademicRequirements">  
-     
-     	
-     Academic Requirements     
-  
-</a></div>  </div>  </div>
-  <div class="views-row views-row-2 views-row-even">
-      
-  <div>        <div>
-<a href="/registrar/academic-planning/#TransferAdvancedPlacementIBCreditNewincomingstudentsBeginningFall2024andCatalog2024">  
-     
-     	
-     Transfer/Advanced Placement/IB Credit - New incoming students (Beginning Fall 2024 and Catalog 2024)     
-  
-</a></div>  </div>  </div>
-  <div class="views-row views-row-3 views-row-odd">
-      
-  <div>        <div>
-<a href="/registrar/academic-planning/#TransferAdvancedPlacementIBCreditCatalogYear2023andPrior">  
-     
-     	
-     Transfer/Advanced Placement/IB Credit - Catalog Year 2023 and Prior     
-  
-</a></div>  </div>  </div>
-  <div class="views-row views-row-4 views-row-even">
-      
-  <div>        <div>
-<a href="/registrar/academic-planning/#CambridgeALevelInternationalExams">  
-     
-     	
-     Cambridge A-Level International Exams     
-  
-</a></div>  </div>  </div>
-  <div class="views-row views-row-5 views-row-odd">
-      
-  <div>        <div>
-<a href="/registrar/academic-planning/#ChangeofMajororStatus">  
-     
-     	
-     Change of Major or Status     
-  
-</a></div>  </div>  </div>
-  <div class="views-row views-row-6 views-row-even">
-      
-  <div>        <div>
-<a href="/registrar/academic-planning/#TransferCreditCurrentlyEnrolledStudents">  
-     
-     	
-     Transfer Credit - Currently Enrolled Students     
-  
-</a></div>  </div>  </div>
-  <div class="views-row views-row-7 views-row-odd">
-      
-  <div>        <div>
-<a href="/registrar/academic-planning/#DeclareaMinor">  
-     
-     	
-     Declare a Minor     
-  
-</a></div>  </div>  </div>
-  <div class="views-row views-row-8 views-row-even views-row-last">
-      
-  <div>        <div>
-<a href="/registrar/academic-planning/#Transcripts">  
-     
-     	
-     Transcripts     
-  
-</a></div>  </div>  </div>
-  <h3><a href="/registrar/registration">Registration</a></h3>
-  <div class="views-row views-row-1 views-row-odd views-row-first">
-      
-  <div>        <div>
-<a href="/registrar/registration/#AddDrop">  
-     
-     	
-     Add/Drop     
-  
-</a></div>  </div>  </div>
-  <div class="views-row views-row-2 views-row-even">
-      
-  <div>        <div>
-<a href="/registrar/registration/#ClassHourSchedule">  
-     
-     	
-     Class Hour Schedule     
-  
-</a></div>  </div>  </div>
-  <div class="views-row views-row-3 views-row-odd">
-      
-  <div>        <div>
-<a href="/registrar/registration/#CrossRegistration">  
-     
-     	
-     Cross Registration     
-  
-</a></div>  </div>  </div>
-  <div class="views-row views-row-4 views-row-even">
-      
-  <div>        <div>
-<a href="/registrar/registration/#Holds">  
-     
-     	
-     Holds     
-  
-</a></div>  </div>  </div>
-  <div class="views-row views-row-5 views-row-odd">
-      
-  <div>        <div>
-<a href="/registrar/registration/#IndependentStudy">  
-     
-     	
-     Independent Study     
-  
-</a></div>  </div>  </div>
-  <div class="views-row views-row-6 views-row-even">
-      
-  <div>        <div>
-<a href="/registrar/registration/#PassNoCredit">  
-     
-     	
-     Pass/No Credit     
-  
-</a></div>  </div>  </div>
-  <div class="views-row views-row-7 views-row-odd">
-      
-  <div>        <div>
-<a href="/registrar/registration/#TimeTickets">  
-     
-     	
-     Time Tickets     
-  
-</a></div>  </div>  </div>
-  <div class="views-row views-row-8 views-row-even">
-      
-  <div>        <div>
-<a href="/registrar/registration/#Waitlist">  
-     
-     	
-     Waitlist     
-  
-</a></div>  </div>  </div>
-  <div class="views-row views-row-9 views-row-odd views-row-last">
-      
-  <div>        <div>
-<a href="/registrar/registration/#RegistrarForms">  
-     
-     	
-     Registrar Forms     
-  
-</a></div>  </div>  </div>
-  <h3><a href="/registrar/grades">Grades</a></h3>
-  <div class="views-row views-row-1 views-row-odd views-row-first">
-      
-  <div>        <div>
-<a href="/registrar/grades/#FacultyGrading">  
-     
-     	
-     Faculty Grading     
-  
-</a></div>  </div>  </div>
-  <div class="views-row views-row-2 views-row-even">
-      
-  <div>        <div>
-<a href="/registrar/grades/#FinalExamScheduleandConflicts">  
-     
-     	
-     Final Exam Schedule and Conflicts     
-  
-</a></div>  </div>  </div>
-  <div class="views-row views-row-3 views-row-odd">
-      
-  <div>        <div>
-<a href="/registrar/grades/#GradingSystem">  
-     
-     	
-     Grading System     
-  
-</a></div>  </div>  </div>
-  <div class="views-row views-row-4 views-row-even">
-      
-  <div>        <div>
-<a href="/registrar/grades/#IncompleteGradesI">  
-     
-     	
-     Incomplete Grades (I)     
-  
-</a></div>  </div>  </div>
-  <div class="views-row views-row-5 views-row-odd views-row-last">
-      
-  <div>        <div>
-<a href="/registrar/grades/#RepeatingaCourse">  
-     
-     	
-     Repeating a Course     
-  
-</a></div>  </div>  </div>
-  <h3><a href="/registrar/graduation-commencement">Graduation &amp; Commencement</a></h3>
-  <div class="views-row views-row-1 views-row-odd views-row-first">
-      
-  <div>        <div>
-<a href="/registrar/graduation-commencement/#CommencementParticipationPolicy">  
-     
-     	
-     Commencement Participation Policy     
-  
-</a></div>  </div>  </div>
-  <div class="views-row views-row-2 views-row-even">
-      
-  <div>        <div>
-<a href="/registrar/graduation-commencement/#GraduationChecklist">  
-     
-     	
-     Graduation Checklist     
-  
-</a></div>  </div>  </div>
-  <div class="views-row views-row-3 views-row-odd">
-      
-  <div>        <div>
-<a href="/registrar/graduation-commencement/#UndergraduateHonors">  
-     
-     	
-     Undergraduate Honors     
-  
-</a></div>  </div>  </div>
-  <div class="views-row views-row-4 views-row-even">
-      
-  <div>        <div>
-<a href="/registrar/graduation-commencement/#DegreeVerification">  
-     
-     	
-     Degree Verification     
-  
-</a></div>  </div>  </div>
-  <div class="views-row views-row-5 views-row-odd views-row-last">
-      
-  <div>        <div>
-<a href="/registrar/graduation-commencement/#OfficialTranscriptRequest">  
-     
-     	
-     Official Transcript Request     
-  
-</a></div>  </div>  </div>
-  <h3><a href="/registrar/staff">Staff</a></h3>
-  <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
-      
-  <div>        <div>
-<a href="/registrar/staff/#Directory">  
-     
-     	
-     Directory     
-  
-</a></div>  </div>  </div>
-    </div>
-  
-  
-  
-  
-  
-  
-</div>    </div>
-  </div>
-</div>  </div>
-</aside><div class="grid-6 region region-content alpha omega" id="region-content">
-  <div class="region-inner region-content-inner">
-    <a id="main-content"></a>
-                <h1 class="title" id="page-title">Grades</h1>
-                        <div class="block block-system block-main block-system-main odd block-without-title" id="block-system-main">
-  <div class="block-inner clearfix">
-                
-    <div class="content clearfix">
-      <article about="/registrar/grades" typeof="foaf:Document" class="node node-page node-published node-not-promoted node-not-sticky author-littec2 odd clearfix" id="node-page-46304">
-        <span property="dc:title" content="Grades" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>    
-  
-  <div class="content clearfix">
-    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Final grades for the semester are available to students through the <a href="http://sis.rpi.edu">Student Information System</a> (SIS). Follow <strong>View My Grades</strong> from the Student Menu. From this location, undergraduate students can also review their academic standing, and cumulative or term GPA.</p>
-<p>Grade reports/report cards are not mailed at the end of the term. If students need a hardcopy of their grades, they have several options:</p>
-<ul>
-<li>Print a copy of the SIS screen displaying their semester grades.</li>
-<li>Print an unofficial transcript from SIS.</li>
-<li>If an <em>official</em> record of their entire academic history is required, students can order a transcript by completing an <a href="https://info.rpi.edu/registrar/academic-planning/#Transcripts"> online transcript request form</a>.</li>
-<li>Students who require a record of just the current term's grades, should contact the <a href="https://rpi-registrar.zendesk.com/hc/en-us">Registrar's Office</a> to request a report.</li>
-</ul>
-</div></div></div><div class="field-collection-container clearfix"><div class="field field-name-field-building-block field-type-field-collection field-label-hidden"><div class="field-items"><div class="field-item even"><div class="field-collection-view clearfix view-mode-full"><div class="entity entity-field-collection-item field-collection-item-field-building-block clearfix" about="/field-collection/field-building-block/1237" class="entity entity-field-collection-item field-collection-item-field-building-block">
-  <div class="content">
-    <div class="field field-name-field-block-type field-type-taxonomy-term-reference field-label-hidden"><div class="field-items"><div class="field-item even">Accordion</div></div></div>  <h3 class="buidling-block-title">
-     
-     <a id="FacultyGrading">	
-     Faculty Grading     </a>
-  </h3>
-<div class="field field-name-field-text field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Grades are due 48 hours after a scheduled final exam. If no final exam is given, grades must be submitted on the first day grades are due according to the schedule that is published each semester. If you have students who attended your course, but whose names do not appear on the roster, please send us a memo or email with the student's name, course name and CRN and grade. We will research the student's registrations to see if the grade can be assigned to the student.</p>
-</div></div></div><div class="field-collection-container clearfix"><div class="field field-name-field-accordion field-type-field-collection field-label-hidden"><div class="field-items"><div class="field-item even"><div class="field-collection-view clearfix view-mode-full">
-<div class="entity entity-field-collection-item field-collection-item-field-accordion clearfix" about="/field-collection/field-accordion/1238" class="entity entity-field-collection-item field-collection-item-field-accordion">
-  <div class="content">
-    <a class="field-name-field-item-title" tabindex="0" href="#">
-      Web Grading Instructions</a>
-    <div class="field field-name-field-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><ul>
-<li>Go to <a href="http://sis.rpi.edu">http://sis.rpi.edu</a> and log in.</li>
-<li>Enter your User I.D. (Rensselaer ID Number)and PIN (Personal ID Number). If you forget your PIN, try the "Forgot PIN?" button.</li>
-<li>On the Main Menu, select Instructors &amp; Advisors Menu.</li>
-<li>Once you are in the Instructors &amp; Advisors Menu, select Submit Final Grades</li>
-<li>Select current term and Submit that term</li>
-<li>Select the first course you wish to grade</li>
-<li>Submit the CRN - Brings you back to the Instructors &amp; Advisors Menu</li>
-<li>Select Submit Final Grades</li>
-<li>Enter each grade from the drop down menu</li>
-<li>Print them if you want a copy for you or your departmental office</li>
-<li>When you are done, click Submit - you will see a message at the top of the screen that the grade has saved successfully</li>
-<li>Click CRN Selection at the bottom of the page</li>
-<li>Choose the next course you wish to grade and submit CRN - which brings you back to the Instructors &amp; Advisor Menu</li>
-<li>Select Submit Your Final Grades. Repeat same sequence as above until you have graded all of your courses.</li>
-</ul>
-</div></div></div>  </div>
-</div>
-
-</div></div><div class="field-item odd"><div class="field-collection-view clearfix view-mode-full">
-<div class="entity entity-field-collection-item field-collection-item-field-accordion clearfix" about="/field-collection/field-accordion/1239" class="entity entity-field-collection-item field-collection-item-field-accordion">
-  <div class="content">
-    <a class="field-name-field-item-title" tabindex="0" href="#">
-      No Shows on the Web Roster</a>
-    <div class="field field-name-field-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>If the student EVER attended, based on work completed, you are urged to assign a grade (e.g. F grade). If the student NEVER attended or stopped attending, in the Not Attending Column, enter the approximate percentage of the term that the student DID attend classes. For example, if a student NEVER attended, enter no grade for that student and in the Not Attending Column, enter 00. If a student attended for about half the term, enter 50; for a student who attended all term long, but didn't show for the Final Exam, enter 100. DO NOT USE A % SIGN in the Not Attending Column as this is a NUMERIC field. We will research the student's record and assign the appropriate administrative grade or adjust the student's registration.</p>
-</div></div></div>  </div>
-</div>
-
-</div></div><div class="field-item even"><div class="field-collection-view clearfix view-mode-full">
-<div class="entity entity-field-collection-item field-collection-item-field-accordion clearfix" about="/field-collection/field-accordion/1240" class="entity entity-field-collection-item field-collection-item-field-accordion">
-  <div class="content">
-    <a class="field-name-field-item-title" tabindex="0" href="#">
-      Posting Grades</a>
-    <div class="field field-name-field-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>The <a href="http://www.ed.gov/policy/gen/guid/fpco/ferpa/">Family Education Rights and Privacy Act</a> of 1977 (P.L./39-380) specifically prohibits the posting of student grades by name or ID. Students can see their grades on SIS within 24 hours of your submitting them on-line</p>
-</div></div></div>  </div>
-</div>
-
-</div></div><div class="field-item odd"><div class="field-collection-view clearfix view-mode-full">
-<div class="entity entity-field-collection-item field-collection-item-field-accordion clearfix" about="/field-collection/field-accordion/1241" class="entity entity-field-collection-item field-collection-item-field-accordion">
-  <div class="content">
-    <a class="field-name-field-item-title" tabindex="0" href="#">
-      Thesis and Project grades</a>
-    <div class="field field-name-field-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Master and Doctoral Thesis/Project registrations are now graded every term, either S (Satisfactory progress) or U (Unsatisfactory progress). The S or U grade reflects a single term's research progress. Please note that students who do not make satisfactory progress and are assigned a U grade will still earn the thesis credit hours for the term and the U grade won't need to be changed when the thesis/project is completed and turned in to the Office of Graduate Education.</p>
-</div></div></div>  </div>
-</div>
-
-</div></div><div class="field-item even"><div class="field-collection-view clearfix view-mode-full">
-<div class="entity entity-field-collection-item field-collection-item-field-accordion clearfix" about="/field-collection/field-accordion/1242" class="entity entity-field-collection-item field-collection-item-field-accordion">
-  <div class="content">
-    <a class="field-name-field-item-title" tabindex="0" href="#">
-      Incomplete Grades and Incomplete Grade AuthorizationForms</a>
-    <div class="field field-name-field-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>If you agree to assign an Incomplete (I) grade to a student, you do so in SIS, just as you do when entering your other grades for the course.</p>
-<p>NOTE: You must also complete an Incomplete Authorization Form with the student and submit this form to the Registrar. Incomplete Grade Authorization Forms are not issued to students. Instructors may get them from their departmental office or use the Incomplete Grade Authorization Form available from the Instructor menu in SIS (Login Required).</p>
-</div></div></div>  </div>
-</div>
-
-</div></div><div class="field-item odd"><div class="field-collection-view clearfix view-mode-full field-collection-view-final">
-<div class="entity entity-field-collection-item field-collection-item-field-accordion clearfix" about="/field-collection/field-accordion/1243" class="entity entity-field-collection-item field-collection-item-field-accordion">
-  <div class="content">
-    <a class="field-name-field-item-title" tabindex="0" href="#">
-      Grades Rolling</a>
-    <div class="field field-name-field-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>The Registrar will "roll" grades to students' records every night. On the Web Grade Roster, you will see those grades noted in the Rolled Column. Once a grade has been "rolled" to a student's academic history, you can only change the grade on a Change of Grade form (available through the Instructor menu in SIS) submitted to the Registrar. You cannot change rolled grades on the web.</p>
-</div></div></div>  </div>
-</div>
-
-</div></div></div></div></div>  </div>
-</div>
-</div></div><div class="field-item odd"><div class="field-collection-view clearfix view-mode-full"><div class="entity entity-field-collection-item field-collection-item-field-building-block clearfix" about="/field-collection/field-building-block/1922" class="entity entity-field-collection-item field-collection-item-field-building-block">
-  <div class="content">
-    <div class="field field-name-field-block-type field-type-taxonomy-term-reference field-label-hidden"><div class="field-items"><div class="field-item even">Text Block</div></div></div>  <h3 class="buidling-block-title">
-     
-     <a id="FinalExamScheduleandConflicts">	
-     Final Exam Schedule and Conflicts     </a>
-  </h3>
-<div class="field field-name-field-text field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p> </p>
-<p><strong><em>*Please check the schedule below for the exact date and time of your final exam, listed according to EDT. If you have a time conflict or need accommodation due to a time zone difference, please contact your instructor. Make-up exams will be given in accordance with the conflict resolution procedure listed below.</em></strong></p>
-<p><strong><em> </em></strong><strong><em>Faculty are strongly encouraged to be flexible in offering alternate exam times for students facing time conflicts and time zone issues. Please also be mindful that not all students have access to reliable internet so an alternate assessment should be provided in that case.</em></strong></p>
-<p><a href="https://rpi.box.com/s/7tkw9m5axjqs17rjkap9wq8cnqcaqqq4" target="_blank">Final Exam By Date</a><br />
-Please check for changes prior to your exam. Changes are indicated by <strong>Bold Type</strong> .</p>
-<p><a href="https://rpi.box.com/s/xydroq10e7a7bycww5b9a7wbw4ufkl9k" target="_blank">Final Exam By Subject </a><br />
-Please check for changes prior to your exam. Changes are indicated by <strong>Bold Type</strong> .</p>
-<p><strong>Students who have conflicts between two or more exams given at the same time will resolve the matter of who will give the make-up exam in the following manner:</strong></p>
-<ol>
-<li>The lower level course has precedence over an upper level course. For example, if a student has a conflict between a 2000 and a 4000 level course, the instructor of the 4000 level course must give a make-up exam.</li>
-<li>If both courses are the same level, the student should approach each instructor to determine if one of the instructors will give a make-up exam.</li>
-<li>If both instructors refuse to give a make-up exam when requested under the circumstances of item #2, the student should see the department scheduler. It will be that scheduler's responsibility to call his/her counterpart in the other department to determine who should give the make-up exam.</li>
-<li>If the two schedulers cannot reach a compromise, the scheduler originally approached by the student should call the Associate Dean of his/her school and ask the Dean to flip a coin and the loser of the toss will have to give a make-up exam.</li>
-</ol>
-<p><strong>If you have more than two exams in one day...</strong></p>
-<p>Any student with more than two final exams in one day can request that a conflict exam for the third exam be given on a different day and would follow the conflict resolution instructions listed above.</p>
-<p><strong>**Per the Provost’s memo, classes and final exams may not be scheduled during the designated reading days each semester.**</strong></p>
-</div></div></div>  </div>
-</div>
-</div></div><div class="field-item even"><div class="field-collection-view clearfix view-mode-full"><div class="entity entity-field-collection-item field-collection-item-field-building-block clearfix" about="/field-collection/field-building-block/1233" class="entity entity-field-collection-item field-collection-item-field-building-block">
-  <div class="content">
-    <div class="field field-name-field-block-type field-type-taxonomy-term-reference field-label-hidden"><div class="field-items"><div class="field-item even">Accordion</div></div></div>  <h3 class="buidling-block-title">
-     
-     <a id="GradingSystem">	
-     Grading System     </a>
-  </h3>
-<div class="field-collection-container clearfix"><div class="field field-name-field-accordion field-type-field-collection field-label-hidden"><div class="field-items"><div class="field-item even"><div class="field-collection-view clearfix view-mode-full">
-<div class="entity entity-field-collection-item field-collection-item-field-accordion clearfix" about="/field-collection/field-accordion/1234" class="entity entity-field-collection-item field-collection-item-field-accordion">
-  <div class="content">
-    <a class="field-name-field-item-title" tabindex="0" href="#">
-      Grading Implementation Schedule</a>
-    <div class="field field-name-field-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><table border="1" cellpadding="5" summary="GPA notes">
-<tbody>
-<tr>
-<td><strong>+/- Grading Implementation Schedule:</strong></td>
-<td><strong>Course levels:</strong></td>
-</tr>
-<tr>
-<td>Prior to Fall 2005: +/- Grading not implemented</td>
-<td>1000 - 2999 Undergraduate</td>
-</tr>
-<tr>
-<td>Fall 2005: 1000 and 6000 level courses</td>
-<td>4000 - 5999 Undergraduate and graduate</td>
-</tr>
-<tr>
-<td>Fall 2006: 2000 level courses</td>
-<td>6000 and above - Graduate</td>
-</tr>
-<tr>
-<td>Fall 2007: 4000 and 5000 level courses</td>
-<td> </td>
-</tr>
-</tbody>
-</table>
-</div></div></div>  </div>
-</div>
-
-</div></div><div class="field-item odd"><div class="field-collection-view clearfix view-mode-full">
-<div class="entity entity-field-collection-item field-collection-item-field-accordion clearfix" about="/field-collection/field-accordion/1235" class="entity entity-field-collection-item field-collection-item-field-accordion">
-  <div class="content">
-    <a class="field-name-field-item-title" tabindex="0" href="#">
-      Grades</a>
-    <div class="field field-name-field-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><table border="1" cellpadding="5" summary="GPA codes and interpretations">
-<tbody>
-<tr>
-<th>Grade</th>
-<th>Contributes to<br />
-			quality hours</th>
-<th>Quality points<br />
-			earned prior to<br />
-			fall 2005</th>
-<th>Quality points<br />
-			effective<br />
-			fall 2005</th>
-<th>Contributes to<br />
-			earned hours</th>
-<th>Grade interpretation</th>
-</tr>
-<tr>
-<td>A</td>
-<td>Yes</td>
-<td>4.00</td>
-<td>4.00</td>
-<td>Yes</td>
-<td>Excellent</td>
-</tr>
-<tr>
-<td>A-</td>
-<td>Yes</td>
-<td>NA</td>
-<td>3.67</td>
-<td>Yes</td>
-<td>Excellent</td>
-</tr>
-<tr>
-<td>B+</td>
-<td>Yes</td>
-<td>NA</td>
-<td>3.33</td>
-<td>Yes</td>
-<td>Good</td>
-</tr>
-<tr>
-<td>B</td>
-<td>Yes</td>
-<td>3.00</td>
-<td>3.00</td>
-<td>Yes</td>
-<td>Good</td>
-</tr>
-<tr>
-<td>B-</td>
-<td>Yes</td>
-<td>NA</td>
-<td>2.67</td>
-<td>Yes</td>
-<td>Good</td>
-</tr>
-<tr>
-<td>C+</td>
-<td>Yes</td>
-<td>NA</td>
-<td>2.33</td>
-<td>Yes</td>
-<td>Average</td>
-</tr>
-<tr>
-<td>C</td>
-<td>Yes</td>
-<td>2.00</td>
-<td>2.00</td>
-<td>Yes</td>
-<td>Average</td>
-</tr>
-<tr>
-<td>C-</td>
-<td>Yes</td>
-<td>NA</td>
-<td>1.67</td>
-<td>Yes</td>
-<td>Average</td>
-</tr>
-<tr>
-<td>D+</td>
-<td>Yes</td>
-<td>NA</td>
-<td>1.33</td>
-<td>Yes</td>
-<td>Passed (not available to graduate students)</td>
-</tr>
-<tr>
-<td>D</td>
-<td>Yes</td>
-<td>1.00</td>
-<td>1.00</td>
-<td>Yes</td>
-<td>Passed (not available to graduate students)</td>
-</tr>
-<tr>
-<td>F</td>
-<td>Yes</td>
-<td>0</td>
-<td>0</td>
-<td>No</td>
-<td>Failed</td>
-</tr>
-<tr>
-<td>I</td>
-<td>Yes</td>
-<td>0</td>
-<td>0</td>
-<td>No</td>
-<td>Incomplete (Incomplete course work)</td>
-</tr>
-<tr>
-<td>W</td>
-<td>No</td>
-<td>0</td>
-<td>0</td>
-<td>No</td>
-<td>Withdrawn</td>
-</tr>
-<tr>
-<td>AU</td>
-<td>No</td>
-<td>0</td>
-<td>0</td>
-<td>No</td>
-<td>Audit</td>
-</tr>
-<tr>
-<td>P</td>
-<td>No</td>
-<td>0</td>
-<td>0</td>
-<td>Yes</td>
-<td>Passed a Pass/No Credit course</td>
-</tr>
-<tr>
-<td>U*</td>
-<td>No</td>
-<td>0</td>
-<td>0</td>
-<td>Yes*</td>
-<td>Unsatisfactory</td>
-</tr>
-<tr>
-<td>IP</td>
-<td>No</td>
-<td>0</td>
-<td>0</td>
-<td>No</td>
-<td>In Progress (multiple-term course)</td>
-</tr>
-<tr>
-<td>S</td>
-<td>No</td>
-<td>0</td>
-<td>0</td>
-<td>Yes</td>
-<td>Satisfactory</td>
-</tr>
-<tr>
-<td>Z</td>
-<td>No</td>
-<td>0</td>
-<td>0</td>
-<td>No</td>
-<td>Grade Unknown -- grade due, but not submitted</td>
-</tr>
-<tr>
-<td>NE**</td>
-<td>No</td>
-<td>0</td>
-<td>0</td>
-<td>No</td>
-<td>** Not examined -- missed final exam)</td>
-</tr>
-<tr>
-<td>FA</td>
-<td>Yes</td>
-<td>0</td>
-<td>0</td>
-<td>No</td>
-<td>Failed due to administrative reasons</td>
-</tr>
-<tr>
-<td>NC</td>
-<td>No</td>
-<td>0</td>
-<td>0</td>
-<td>No</td>
-<td>Failed a Pass/No Credit course</td>
-</tr>
-<tr>
-<td>WI</td>
-<td>Yes</td>
-<td>0</td>
-<td>0</td>
-<td>No</td>
-<td>Failed (did not complete a course that was previously graded as incomplete)</td>
-</tr>
-</tbody>
-</table>
-</div></div></div>  </div>
-</div>
-
-</div></div><div class="field-item even"><div class="field-collection-view clearfix view-mode-full field-collection-view-final">
-<div class="entity entity-field-collection-item field-collection-item-field-accordion clearfix" about="/field-collection/field-accordion/1271" class="entity entity-field-collection-item field-collection-item-field-accordion">
-  <div class="content">
-    <a class="field-name-field-item-title" tabindex="0" href="#">
-      GPA Calculation</a>
-    <div class="field field-name-field-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Every time a student passes a course, they receive both a designated number of <em>credit hours</em> and a number of <em>quality points</em>, which are calculated by multiplying the course credit hours and the numerical equivalent of the letter grade received. To determine the grade point average, divide the total number of earned quality points for all courses by the total number of credit hours scheduled.</p>
-<p>A sample GPA calculation appears below. (Note that grade point averages are <em>not</em> rounded, but are truncated after two decimal places when displayed.</p>
-<table summary="GPA calculation">
-<tbody>
-<tr>
-<th>Course</th>
-<th>Credit hours</th>
-<th>Grade</th>
-<th>Quality points</th>
-</tr>
-<tr>
-<td>MATH 1010</td>
-<td>4</td>
-<td>B</td>
-<td>12 (4 hours x 3)</td>
-</tr>
-<tr>
-<td>CHEM 1100</td>
-<td>4</td>
-<td>A</td>
-<td>16 (4 hours x 4)</td>
-</tr>
-<tr>
-<td>ENGR 1300</td>
-<td>1</td>
-<td>D</td>
-<td>1 (1 hour x 1)</td>
-</tr>
-<tr>
-<td>PSYC 1200</td>
-<td>4</td>
-<td>B</td>
-<td>12 (4 hours x 3)</td>
-</tr>
-</tbody>
-</table>
-<p>GPA = 41 quality points divided by 13 credit hours = 3.15</p>
-</div></div></div>  </div>
-</div>
-
-</div></div></div></div></div>  </div>
-</div>
-</div></div><div class="field-item odd"><div class="field-collection-view clearfix view-mode-full"><div class="entity entity-field-collection-item field-collection-item-field-building-block clearfix" about="/field-collection/field-building-block/1236" class="entity entity-field-collection-item field-collection-item-field-building-block">
-  <div class="content">
-    <div class="field field-name-field-block-type field-type-taxonomy-term-reference field-label-hidden"><div class="field-items"><div class="field-item even">Text Block</div></div></div>  <h3 class="buidling-block-title">
-     
-     <a id="IncompleteGradesI">	
-     Incomplete Grades (I)     </a>
-  </h3>
-<div class="field field-name-field-text field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>Incomplete (I) grade stipulations</p>
-<ol>
-<li>The I (incomplete course work) is given when, due to illness or other circumstances such as personal emergency beyond the student's control, a student has been unable to complete the required course work. The I grade is normally given only after the contract form (Incomplete I Grade Authorization) has been completed and signed by both the instructor and the student, and received by the Registrar.</li>
-<li>The I grade is given only in instances of truly incomplete course work, such as laboratory exercises, course project, term paper, etc. <strong>Under no circumstances may the I be given for the following situations</strong>:</li>
-<li>
-<ul>
-<li>Absence from a final examination.</li>
-<li>Student on class list who has never attended class.</li>
-<li>Student who wishes to do additional post-semester work in order to improve a grade.</li>
-<li>Student who wishes to repeat the course as auditor, retaking examinations, etc., in order to improve a grade.</li>
-</ul>
-</li>
-<li>The I grade must be completed within one semester. If facilities (i.e., laboratory) are required to complete the outstanding work but are not available during the next semester, then <strong>one year is the maximum time limit.</strong></li>
-<li>Effective Fall 1999: If the agreements made in the I grade contract are not faithfully observed, or if the I grade is not cleared in the time specified in the contract, the grade automatically becomes the grade noted below. (See Item 5.)</li>
-<li>Note: the grade I is considered a penalty grade in the calculation of the term QPA. The grade of "I", until it is changed, is calculated as if it were the grade of "F".</li>
-<li>The <a href="https://sis.rpi.edu/rss/twbkwbis.P_WWWLogin">Incomplete Form</a> is located in the Instuctor menu of SIS.</li>
-</ol>
-</div></div></div>  </div>
-</div>
-</div></div><div class="field-item even"><div class="field-collection-view clearfix view-mode-full field-collection-view-final"><div class="entity entity-field-collection-item field-collection-item-field-building-block clearfix" about="/field-collection/field-building-block/1246" class="entity entity-field-collection-item field-collection-item-field-building-block">
-  <div class="content">
-    <div class="field field-name-field-block-type field-type-taxonomy-term-reference field-label-hidden"><div class="field-items"><div class="field-item even">Text Block</div></div></div>  <h3 class="buidling-block-title">
-     
-     <a id="RepeatingaCourse">	
-     Repeating a Course     </a>
-  </h3>
-<div class="field field-name-field-text field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p><strong>Undergraduates</strong></p>
-<p>If you repeat the identical course as an undergraduate at Rensselaer, both grades will appear on your student record and transcript. However, keep in mind that:</p>
-<ul>
-<li>The grade received in the repeated course is always the one used in computing your GPA.<br />
-	Note! If a student repeats a course that they previously passed, and fails the course, the failure takes precedence and the student has not completed the course requirements for graduation purposes.
-	</li>
-<li>The course credit will count only once.</li>
-<li>Independent Study courses, courses taken on a P/NC basis, or courses taken at another institution cannot be used to replace the original course grade.</li>
-<li>Repeating a course for which a "WI" grade was originally received will not replace that grade in determining the GPA.</li>
-</ul>
-<p>The recalculation of GPAs to account for repeated courses occurs at the end of the semester after <strong>all</strong> grades for <strong>all</strong> students have been processed.</p>
-<p><strong>Graduates</strong></p>
-<p>If a graduate student repeats a course, both grades are entered on the record. However, course credit will count only once and, although both grades appear on the transcript,the grade received in the repeated course is always the one used in computing the GPA. The grade for a repeated course for which the student receives a grade of “W” or taken at another institution cannot be used in place of the original course grade in calculating the GPA.</p>
-</div></div></div>  </div>
-</div>
-</div></div></div></div></div>  </div>
-  
-  <div class="clearfix">
-          <nav class="links node-links clearfix"></nav>
     
-      </div>
-</article>    </div>
-  </div>
-</div><div class="block block-views block-pagebanner-block block-views-pagebanner-block even block-without-title" id="block-views-pagebanner-block">
-  <div class="block-inner clearfix">
-                
-    <div class="content clearfix">
-      <div class="view view-pagebanner view-id-pagebanner view-display-id-block view-dom-id-9db2c8e44e71324925610ecc7f7175ca">
-        
   
-  
-      <div class="view-content">
-        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
-      
-  <div class="views-field views-field-field-banner-image">        <div class="field-content"></div>  </div>  </div>
-    </div>
-  
-  
-  
-  
-  
-  
-</div>    </div>
-  </div>
-</div>      </div>
-</div><aside class="grid-3 region region-sidebar-second omega" id="region-sidebar-second">
-  <div class="region-inner region-sidebar-second-inner">
-    <section class="block block-views callout-container block-contact-block-block block-views-contact-block-block odd" id="block-views-contact-block-block">
-  <div class="block-inner clearfix">
-              <h2 class="block-title">Contact Information</h2>
-            
-    <div class="content clearfix">
-      <div class="view view-contact-block view-id-contact_block view-display-id-block view-dom-id-f0719043f1f733f3a8749f08b8856f7c">
-        
-  
-  
-      <div class="view-content">
-        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
-      
-  <div class="views-field views-field-field-contact-info">        <div class="field-content"><p><strong>Registrar's Office</strong><br />
-Academy Hall<br />
-Suite 2600<br />
-P: <a href="tel:518-276-6231">518-276-6231</a></p>
-<p><a href="https://rpi-registrar.zendesk.com/hc/en-us/requests/new"><strong>Submit a request &gt;&gt;</strong></a></p>
-<p><strong>Hours of Operation</strong><br />
-Monday-Wednesday, Friday<br />
-8:30 a.m. - 4:30 p.m.<br />
-Thursday 9:00 a.m. - 4:30 p.m.</p>
-<p>&nbsp;</p>
-</div>  </div>  </div>
-    </div>
-  
-  
-  
-  
-  
-  
-</div>    </div>
-  </div>
-</section>  </div>
-</aside>  </div>
-</div></section>    
-  
-      <footer id="section-footer" class="section section-footer">
-  <div id="zone-footer-wrapper" class="zone-wrapper zone-footer-wrapper clearfix">  
-  <div id="zone-footer" class="zone zone-footer clearfix container-12">
-    <div class="grid-12 region region-footer-second" id="region-footer-second">
-  <div class="region-inner region-footer-second-inner">
-    <div class="block block-block block-9 block-block-9 odd block-without-title" id="block-block-9">
-  <div class="block-inner clearfix">
-                
-    <div class="content clearfix">
-      <div class="r-scer-outtershell"> 
-<div class="r-scer-innershell">
-        <div class="r-scer-flag">
-        	<img src="https://info.rpi.edu/sites/all/themes/rpi2016/resources/web-branding/v1/footer/seal%202.png" alt="" class="flag-img" />
-        	<p>110 Eighth Street
-        	<br />Troy, NY USA 12180
-			<br />(518) 276-6000
-        	</p>
-            <div class="r-scer-social">
-                <h3>FOLLOW US</h3>
-                <ul>
-                    <li>
-                      <a href="https://www.facebook.com/RPI.EDU" target="_blank">
-                        <img src="https://info.rpi.edu/sites/all/themes/rpi2016/resources/web-branding/icon-facebook-23.png" alt="Like us on Facebook" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.twitter.com/RPI" target="_blank">
-                        <img src="https://info.rpi.edu/sites/all/themes/rpi2016/resources/web-branding/icon-twitter-23.png" alt="Follow us on Twitter" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.instagram.com/rpiofficial/" target="_blank">
-                        <img src="https://info.rpi.edu/sites/all/themes/rpi2016/resources/web-branding/icon-instagram-23.png" alt="Follow us on Instagram" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.linkedin.com/edu/school?id=19005" target="_blank">
-                        <img src="https://info.rpi.edu/sites/all/themes/rpi2016/resources/web-branding/icon-linkedin-23.png" alt="Follow us on LinkedIn" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.youtube.com/user/rpirensselaer" target="_blank">
-                        <img src="https://info.rpi.edu/sites/all/themes/rpi2016/resources/web-branding/icon-youtube-23.png" alt="Subscribe to us on YouTube" />
-                      </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="column one">
-        	<h3>SCHOOLS &amp; PROGRAMS</h3>
-            <ul>
-           	    <li><a href="http://www.arch.rpi.edu/">Architecture</a></li>
-                    <li><a href="http://lallyschool.rpi.edu/">Business</a></li>
-                    <li><a href="http://eng.rpi.edu/">Engineering</a></li>
-                    <li><a href="http://www.hass.rpi.edu/">Humanities, Arts, &amp; Social Sciences</a></li>
-                    <li><a href="https://science.rpi.edu/itws">IT &amp; Web Science</a></li>
-                    <li><a href="http://science.rpi.edu/">Science</a></li>
-                    <li><a href="http://research.rpi.edu/">Research</a></li>
-                 </ul>
-        </div>
-        <div class="column two">
-        <h3>RPI CONNECTIONS</h3>
-        	<ul>          
-                	<li><a href="http://admissions.rpi.edu/">Admissions</a></li>
-                    <li><a href="http://alumni.rpi.edu/">Alumni/ae &amp; Friends</a></li>
-                    <li><a href="http://www.rpiathletics.com/">Athletics</a></li>
-                    <li><a href="http://hr.rpi.edu/">Human Resources</a></li>
-                    <li><a href="https://library.rpi.edu/">Library</a></li>
-                    <li><a href="http://rpinfo.rpi.edu/">RPInfo</a></li>
-                    <li><a href="http://scer.rpi.edu/">Strategic Communications</a></li>
-                    <li><a href="https://admissions.rpi.edu/undergraduate/apply/#SpecialApplicantTypes">Veterans</a></li>
-                </ul>
-        </div>
-        <div class="column three">
-        
-        <h3>ENGAGE</h3>
-        	<ul>
-                
-                	<li><a href="http://admissions.rpi.edu/undergraduate/admission/index.html">Apply Now</a></li>
-                    <li><a href="http://info.rpi.edu/">Contact Us</a></li>
-                    <li><a href="http://giving.rpi.edu/">Give to Rensselaer</a></li>
-                    <li><a href="https://info.rpi.edu/visit">Visit Campus</a></li>
-                    <li><a href="https://webforms.rpi.edu/rensselaer-web-site-feedback" target="_blank">Send Feedback</a></li>
-                    <!--<li><a href="https://webforms.rpi.edu/rensselaer-web-site-feedback" target="_blank"><a target="_blank" href="https://sexualviolence.rpi.edu/">Sexual Misconduct</a></li>-->
+
+<div class="rpi-hdr ">
+  <div class="container">
+
+      <nav class="navbar navbar-expand navbar-dark">
+        <a class="navbar-brand rpi-hdr_logo" href="https://rpi.edu">
+          <img alt="Rensselaer"
+               src="/themes/custom/paperclip/img/RPI-Web-Logo-White.png"
+               srcset="/themes/custom/paperclip/img/RPI-Web-Logo-White@2x.png 600w">
+        </a>
+
+                <div id="rpiHeaderNav" class="navbar-expand ms-auto">
+                            <ul class="navbar-nav rpi-header-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="https://rpi-registrar.zendesk.com/agent/">
+                Submit a Request
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/academic-calendar">
+                Academic Calendar
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://catalog.rpi.edu/">
+                Academic Catalog
+              </a>
+            </li>
           </ul>
+                          </div>
         
+                <div class="search-form__slick search-form__slick__light">
+          <i class="fas fa-search"></i>
+                    <form action="/search/node" method="get" id="search-block-form" accept-charset="UTF-8" class="inline-form search-form">
+  <label for="rpisearch" class="sr-only">Search site</label>
+  <input placeholder="Search site"
+         type="search"
+         id="rpisearch"
+         name="keys"
+         value=""
+         class="rpisearch">
+</form>
         </div>
-        <!--<div class="r-scer-bottom-bit">
-        Copyright © 2017 Rensselaer Polytechnic Institute (RPI) &nbsp;&nbsp; | &nbsp;&nbsp; <a href="http://scer.rpi.edu/forjournalists">Media Policy</a> &nbsp;&nbsp; | &nbsp;&nbsp; <a href="http://scer.rpi.edu/privacypolicy">Privacy Policy</a> &nbsp;&nbsp; | &nbsp;&nbsp; <a href="http://rpi.edu/about/heoa/index.html">Student Consumer Information</a>
-        </div>-->
-    
-    <div class="r-scer-bottom-bit">
-    <p>Copyright © <script>document.write(new Date().getFullYear())</script> Rensselaer Polytechnic Institute (RPI)</p>
-    <p>
-      <a target="_blank" href="https://scer.rpi.edu/forjournalists">Media Policy</a> 
-      &nbsp;&nbsp; | &nbsp;&nbsp; 
-      <a target="_blank" href="https://policy.rpi.edu/policy/web-privacy-policy">Web Privacy Policy</a> 
-      &nbsp;&nbsp; | &nbsp;&nbsp; 
-      <a target="_blank" href="https://info.rpi.edu/student-consumer-information">Student Consumer Information</a>
-      &nbsp;&nbsp; | &nbsp;&nbsp; 
-      <a target="_blank" href="https://sexualviolence.rpi.edu/">Title IX Policy</a>
-      &nbsp;&nbsp; | &nbsp;&nbsp; 
-      <a target="_blank" href="https://policy.rpi.edu/policy/web-accessibility-standards">Accessibility</a>
-    </p>
-    </div></div>
+              </nav>
+
+  </div>
 </div>
+
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+        
+
+<div id="page-wrapper">
+  <div id="page">
+
+    <header id="header" class="header dept-header has-bg-image" role="banner" aria-label="Site header"       style="background-image: url(https://registrar.rpi.edu/sites/default/files/2024-05/Registrar-header-1900-Select-Campus-Imagery_008.jpg)"
+            >
+              
+        <div class="container">
+            <h1 class="site-title">
+  <a href="/" title="Home" rel="home" class="navbar-brand">
+    Office of the Registrar
+  </a>
+</h1>
+  
+
+        </div>
+
+          </header>
+
+
+        <nav class="navbar navbar-light navbar-expand-lg" id="navbar-main">
+            <div class="container">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="CollapsingNavbar">
+              <nav role="navigation" aria-labelledby="block-paperclip-main-menu-menu" id="block-paperclip-main-menu" class="navigation menu--main primary-nav">
+            
+  <h3 class="sr-only" id="block-paperclip-main-menu-menu">Main navigation</h3>
+  
+
+        
+  
+    
+            
+        
+    
+    <ul id="block-paperclip-main-menu" region="primary_menu" class="clearfix nav">
+            
+            <li class="nav-item">
+                <a href="/about" class="nav-link" data-drupal-link-system-path="node/655">About</a>
+              </li>
+            
+            <li class="nav-item">
+                <a href="/services" class="nav-link" data-drupal-link-system-path="node/730">Services</a>
+              </li>
+            
+            <li class="nav-item menu-item--collapsed">
+                <a href="/registration-and-academics" class="nav-link" data-drupal-link-system-path="node/569">Registration and Academics</a>
+              </li>
+            
+            <li class="nav-item menu-item--collapsed menu-item--active-trail">
+                <a href="/classes-grades-and-evaluations" class="nav-link active is-active" data-drupal-link-system-path="node/570" aria-current="page">Classes, Grades, and Evaluations</a>
+              </li>
+            
+            <li class="nav-item">
+                <a href="/transcripts-and-records" class="nav-link" data-drupal-link-system-path="node/571">Transcripts and Records</a>
+              </li>
+            
+            <li class="nav-item">
+                <a href="/contact" class="nav-link" data-drupal-link-system-path="node/6">Contact Us</a>
+              </li>
+        </ul>
+  
+
+
+
+  </nav>
+
+                    </div>
+                            </div>
+          </nav>
+
+
+          <div class="highlighted">
+        <aside class="container section clearfix" role="complementary">
+            <div data-drupal-messages-fallback class="hidden"></div>
+
+
+        </aside>
+      </div>
+            <div id="main-wrapper" class="layout-main-wrapper clearfix">
+              <div id="main" class="container">
+            <div id="block-paperclip-breadcrumbs" class="block block-system block-system-breadcrumb-block">
+  
+    
+      <div class="content">
+      
+
+  <nav role="navigation" aria-label="breadcrumb">
+    <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                  <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="/">
+            <span itemprop="name">Home</span>
+          </a>
+          <meta itemprop="position" content="1" />
+        </li>
+              </ol>
+  </nav>
+
     </div>
   </div>
-</div>  </div>
-</div>  </div>
-</div></footer>  </div>  <div class="region region-page-bottom" id="region-page-bottom">
-  <div class="region-inner region-page-bottom-inner">
+
+
+          <div class="row row-offcanvas row-offcanvas-left flex-lg-row-reverse clearfix">
+                          <div class="sidebar_first sidebar order-first col-lg-3" id="sidebar_first">
+                <aside class="section" role="complementary">
+                    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation" class="navigation menu--main sidebar-nav">
+            
+  <h3 class="sr-only" id="block-mainnavigation-menu">Main navigation</h3>
+  
+
+        
+  
+    
+            
+                        
+    
+    <ul id="block-mainnavigation" region="sidebar_first" class="clearfix navbar-nav nav">
+            
+            <li class="nav-item">
+                <a href="/classes-grades-and-evaluations/faculty-grading" class="nav-link" data-drupal-link-system-path="node/675">Faculty Grading</a>
+              </li>
+            
+            <li class="nav-item">
+                <a href="/classes-grades-and-evaluations/final-exams" class="nav-link" data-drupal-link-system-path="node/680">Final Exams</a>
+              </li>
+        </ul>
+  
+
+
+
+  </nav>
+
+                </aside>
+              </div>
+                                      <main class="main-content col order-last col-lg-9" id="content" role="main">
+                <section class="section">
+                  <a id="main-content" tabindex="-1"></a>
+                    <div id="block-paperclip-page-title" class="block block-core block-page-title-block">
+  
+    
+      <div class="content">
+      
+  <h1 class="page-title"><span class="field field--name-title field--type-string field--label-hidden">Classes, Grades, and Evaluations</span>
+</h1>
+
+
+    </div>
+  </div>
+<div id="block-paperclip-content" class="block block-system block-system-main-block">
+  
+    
+      <div class="content">
+      
+
+<article class="node node--type-advanced-page node--view-mode-full clearfix">
+  <header>
+    
+        
+      </header>
+  <div class="node__content clearfix">
+    
+
+
+      <div class="field field--name-field-paragraphs field--type-entity-reference-revisions field--label-hidden field__items">
+              <div class="field__item">  <div class="paragraph paragraph--type--basic-text paragraph--view-mode--default">
+          
+            <div class="clearfix text-formatted field field--name-field-text field--type-text-long field--label-hidden field__item"><p>The Office of the Registrar is a key point of contact for students, faculty, and staff on class lists, exams, and grades.</p></div>
+      
       </div>
 </div>
-<script async src="https://cse.google.com/cse.js?cx=008880626031153838408:fy_zc7cxkke"></script>
+              <div class="field__item">  <div class="paragraph paragraph--type--basic-text paragraph--view-mode--default">
+          
+            <div class="clearfix text-formatted field field--name-field-text field--type-text-long field--label-hidden field__item"><p><strong>Quick Links</strong></p><ul><li><a href="/services/class-scheduling/class-offerings-and-schedule">Schedule of Classes</a></li><li><a href="/services/class-scheduling/final-exam-schedule">Examinations</a></li><li><a href="/services/academic-records/grades">Grades</a></li></ul></div>
+      
+      </div>
+</div>
+          </div>
+  
+  </div>
+</article>
 
-</body>
+    </div>
+  </div>
+
+
+                </section>
+              </main>
+
+          </div>
+        </div>
+          </div>
+          <div class="featured-bottom">
+            <section class="row region region-featured-bottom-first">
+    <section class="subfooter subfooter-contact">
+  <div class="container"><div class="row flex-column flex-lg-row flex-lg-row-reverse align-items-center justify-content-space-between">
+
+    <div class="col text-center text-lg-end">
+      <div class="row">
+
+        <div class="col">
+          <h6><strong>Registrar's Office</strong></h5>
+          <p>Academy Hall</p>
+          <p>Suite 2600</p>
+          <p>
+            <a href="tel:15182766231">518-276-6231</a>
+          </p>
+        </div>
+
+         <div class="col d-none d-lg-block">
+          <img class="img-fluid" 
+            src="/themes/custom/paperclip/img/academy-hall.png" 
+            alt="Academy Hall" />
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col text-center text-lg-start">
+      <a href="https://provost.rpi.edu/" class="d-inline-block">
+        <h6><strong>Office of the Provost</strong></h6>
+              </a>
+    </div>
+
+
+  </div></div>
+</section>
+
+  </section>
+
+          
+          
+      </div>
+      </div>
+</div>
+
+  </div>
+
+    
+
+    <a href="#" class="back-to-top" rel="nofollow">
+  <i class="fa fa-chevron-up"></i>
+  <span class="sr-only">Back to top</span>
+</a>
+
+<footer class="rpi-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 rpi-seal">
+        <img alt="Rensselaer" src="/themes/custom/paperclip/img/RPI-Web-Seal-White.png" 
+             srcset="/themes/custom/paperclip/img/RPI-Web-Seal-White@2x.png 600w" />        
+        <address>
+          <div class="org">Rensselaer Polytechnic Institute</div>
+          <div class="addr">
+            <div class="street-address">
+              110 Eighth Street |
+              Troy, NY USA 12180
+            </div>
+          </div>
+          <div class="tel"><a href="tel:15182766000">(518) 276-6000</a></div>
+          <div class="contact-us">
+            <a href="https://info.rpi.edu/contactus">Contact Us</a>
+          </div>
+        </address>        
+        
+      </div>
+      
+      <div class="col-lg-8">
+        <div class="bottom-bit">
+          <nav class="nav footer-nav">
+            <div class="footer-nav-policies">
+              <span>Policies:</span>
+              <a class="" target="_blank" href="https://policy.rpi.edu/policy/web-privacy-policy">
+                Web Privacy</a>
+              <a class="" target="_blank" href="https://sexualviolence.rpi.edu/">
+                Title IX</a>
+            </div>
+            <a class="" target="_blank" href="https://info.rpi.edu/student-consumer-information">
+              Student Consumer Information</a>
+            <a class="" target="_blank" href="https://policy.rpi.edu/policy/web-accessibility-standards">
+              Accessibility</a>  
+          </nav>          
+          <p>
+            Copyright © 2024 Rensselaer Polytechnic Institute (RPI)
+          </p>  
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/570","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"eJxlj0EOwyAMBD8E4UmRDS6gOhjZcMjvy6mJkuvMarWLIsOGQt8RVKsEVIIUdR7o8OkyCwJ7GyfXlt9-0a-9cZNELotkph0a8DlqtPAErkMnjVx7-Dfc2EfauGceWy6hvfqyPpB6I9BYllPIq61YSDo78HaRbbY-kasVSs5OG3QEBKMfOBduyQ","theme":"paperclip","theme_token":null},"ajaxTrustedUrl":[],"google_analytics":{"account":"GT-PZMD9K","trackOutbound":true,"trackMailto":true,"trackTel":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"user":{"uid":0,"permissionsHash":"aa6ff6ed94b5fb3cfa06552162cf4dd83603016668ac141e2e561fd7ca104859"}}</script>
+<script src="/sites/default/files/js/js_uTay9S76PYBiQNmJVHP7a2TTXO7km059_lD-Pk_NB4U.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=paperclip&amp;include=eJx1zEEKwDAIAMEPJeRJwaRiBImiXvL73kop9LoDS6ok2GGDnOQZjT6hDNWMdLA-wJ21kegAqZFHeFMxMPQpbP_gxnUhXOg1EHyulz37G-yhNpI"></script>
+
+  </body>
 </html>
