@@ -18,7 +18,7 @@ jobs:
 
       - name: Get files
         run: |
-          curl -Lso registrar_grades.html 'https://registrar.rpi.edu/services/class-scheduling/final-exam-schedule'
+          curl -Lso registrar_final-exam-schedule.html 'https://registrar.rpi.edu/services/class-scheduling/final-exam-schedule'
           grep -oie '[^"]*box\.com[^"]*' registrar_grades.html | while read -r LINK; do
             echo "Processing $LINK"
 
@@ -37,6 +37,6 @@ jobs:
       - name: Commit files
         run: |
           git config user.name "Quatalog Updater" && git config user.email "github_actions@quatalog.com"
-          git add *.pdf registrar_grades.html
+          git add *.pdf *.html
           git commit -m "$(date -u)" || exit 0
           git push
