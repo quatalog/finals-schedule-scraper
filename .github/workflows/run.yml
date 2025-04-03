@@ -19,12 +19,19 @@ jobs:
       - name: Get files
         run: |
           curl -Lso registrar_grades.html 'https://registrar.rpi.edu/services/class-scheduling/final-exam-schedule'
-          grep -ie '[^"]*box\.com[^"]*' registrar_grades.html | while read -r link; do
-            LINK1="$(echo "$link" | grep -oie '[^"]*box\.com[^"]*')"
-            LINK2="$(echo "$LINK1" | sed 's/\/s\//\/public\/static\//')"
-            TITLE="$(curl -Ls $LINK1 | grep -oie 'meta property="og:title" content="[^|]*' | cut -d\" -f4)"
+          grep -oie '[^"]*box\.com[^"]*' registrar_grades.html | while read -r LINK; do
+            echo "Processing $LINK"
+
+            # Convert /v/ links to /s/ links using og:image trick, in order to use /public/static/ trick
+            ID_NO_VANITY="$(curl -sL "$LINK" | grep -o "< *meta[^>]*property[^>]*og:image[^>]*>" | sed -e 's/.*shared_name=//i' -e 's/">$//i')"
+            STATIC_LINK="https://rpi.app.box.com/public/static/""$ID_NO_VANITY"
+
+            # Get title from og:title
+            TITLE="$(curl -Ls $LINK | grep -oie 'meta property="og:title" content="[^|]*' | cut -d\" -f4)"
             TITLE="${TITLE%?}"
-            curl -Lo "$TITLE" "$LINK2" && echo "Downloaded $TITLE ($LINK1)" || echo "Failed to download $TITLE ($LINK1)" || true
+
+            # Download from static link
+            curl -Lo "$TITLE" "$STATIC_LINK" && echo "Downloaded $TITLE, $LINK, $STATIC_LINK" || echo "Failed to download $TITLE, $LINK, $STATIC_LINK" || true
           done
             
       - name: Commit files
