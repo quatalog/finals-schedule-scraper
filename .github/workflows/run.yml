@@ -18,7 +18,7 @@ jobs:
 
       - name: Get files
         run: |
-          curl -Lso registrar_grades.html 'https://info.rpi.edu/registrar/grades'
+          curl -Lso registrar_grades.html 'https://registrar.rpi.edu/services/class-scheduling/final-exam-schedule'
           grep -ie '[^"]*box\.com[^"]*' registrar_grades.html | while read -r link; do
             LINK1="$(echo "$link" | grep -oie '[^"]*box\.com[^"]*')"
             LINK2="$(echo "$LINK1" | sed 's/\/s\//\/public\/static\//')"
