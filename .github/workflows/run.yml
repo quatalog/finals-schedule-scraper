@@ -19,7 +19,7 @@ jobs:
       - name: Get files
         run: |
           curl -Lso registrar_final-exam-schedule.html 'https://registrar.rpi.edu/services/class-scheduling/final-exam-schedule'
-          grep -oie '[^"]*box\.com[^"]*' registrar_grades.html | while read -r LINK; do
+          grep -oie '[^"]*box\.com[^"]*' registrar_final-exam-schedule.html | while read -r LINK; do
             echo "Processing $LINK"
 
             # Convert /v/ links to /s/ links using og:image trick, in order to use /public/static/ trick
